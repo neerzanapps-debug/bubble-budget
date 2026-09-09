@@ -225,6 +225,18 @@ h3 { font-size: 18px; }
   transition: background 0.16s ease, box-shadow 0.16s ease;
 }
 .badge:hover { background: var(--surface-2); box-shadow: var(--shadow-sm); }
+
+/* Not yet shipping — present, but clearly not a link */
+.badge-soon {
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--border-strong);
+  box-shadow: none;
+  color: var(--faint);
+  cursor: default;
+}
+.badge-soon:hover { background: transparent; box-shadow: none; }
+.badge-soon .b-btm { font-weight: 600; }
 .badge svg { width: 23px; height: 23px; flex: none; }
 .badge .b-txt { display: flex; flex-direction: column; line-height: 1.15; }
 .badge .b-top { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }

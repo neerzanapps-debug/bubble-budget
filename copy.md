@@ -50,8 +50,8 @@ dashboard; they want logging to cost nothing.
 Bubble Budget puts every spending category on one canvas as a bubble you can touch. Tap the
 bubble, type the amount — that's the whole interaction. No menus, no dropdowns, no sign-up.
 
-**CTA:** App Store · Google Play
-**CTA note:** Free to use. Works on a plane. Nothing to cancel.
+**CTA:** App Store (live) · Android (coming soon, not a link)
+**CTA note:** Free on the App Store. Works on a plane. Nothing to cancel.
 **Trust row:** 100% offline · Local SQLite storage · Zero tracking · No sign-up
 
 ### Headline alternates (for A/B testing)
@@ -196,7 +196,8 @@ Yes. Each bubble can carry its own cap. At 80% it draws an amber ring, at 100% a
 visible at a glance on the canvas, without a single notification.
 
 **Which platforms is it on?**
-iOS and Android, from a single Flutter codebase.
+On iPhone today, free on the App Store. It is built in Flutter, so an Android build is
+planned from the same codebase.
 
 ---
 
@@ -206,6 +207,19 @@ iOS and Android, from a single Flutter codebase.
 **Body:** Because it never asked you to sign up, never charged you, and never made you fill
 in a form to record a coffee.
 **Note:** No account. No subscription. No tracking.
+
+---
+
+## 9a. Live listing facts
+
+- **App Store:** https://apps.apple.com/us/app/bubble-budget/id6808602875
+- **Name / subtitle as published:** Bubble Budget — Visual Expense Tracker
+- **Developer of record:** Nazreen Ansar
+- **Price:** Free · **Category:** Productivity · **Age rating:** 4+
+- **Apple privacy card:** "The developer does not collect any data from this app" — the page's
+  privacy claims must stay consistent with this.
+- **Android:** not published. The badge on the page is a non-clickable "coming soon" state.
+  Swap it for a real link when the Play listing exists, and update the FAQ at the same time.
 
 ---
 
