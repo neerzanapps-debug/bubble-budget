@@ -49,12 +49,12 @@
 
   // size / left / top are percentages of the stage box.
   var CATEGORIES = [
-    { name: 'Groceries',  color: '#2DD4BF', spent: 412.60, cap: 550, size: 30, left: 5,  top: 12 },
-    { name: 'Eating out', color: '#A78BFA', spent: 298.15, cap: 400, size: 24, left: 42, top: 5  },
-    { name: 'Transport',  color: '#FBBF24', spent: 216.00, cap: 250, size: 20, left: 73, top: 23 },
-    { name: 'Coffee',     color: '#38BDF8', spent: 174.50, cap: 250, size: 17, left: 8,  top: 47 },
-    { name: 'Subs',       color: '#FB7185', spent: 128.90, cap: 120, size: 15, left: 34, top: 39 },
-    { name: 'Fun',        color: '#A3E635', spent: 53.85,  cap: 200, size: 13, left: 62, top: 55 }
+    { name: 'Groceries',  color: '#0D9488', spent: 412.60, cap: 550, size: 36, left: 5,  top: 12 },
+    { name: 'Eating out', color: '#7C3AED', spent: 298.15, cap: 400, size: 29, left: 47, top: 22 },
+    { name: 'Transport',  color: '#C2740A', spent: 216.00, cap: 250, size: 25, left: 8,  top: 34 },
+    { name: 'Coffee',     color: '#0369A1', spent: 174.50, cap: 250, size: 22, left: 55, top: 45 },
+    { name: 'Subs',       color: '#DB2777', spent: 128.90, cap: 120, size: 19, left: 17, top: 55 },
+    { name: 'Fun',        color: '#4D7C0F', spent: 53.85,  cap: 200, size: 17, left: 57, top: 65 }
   ];
 
   var sheet      = document.getElementById('sheet');
@@ -84,8 +84,9 @@
     b.style.aspectRatio = '1';
     b.style.left = cat.left + '%';
     b.style.top  = cat.top + '%';
-    b.style.background = 'radial-gradient(circle at 34% 26%, ' + hexToRgba(cat.color, 0.5) +
-                         ', ' + hexToRgba(cat.color, 0.26) + ' 62%)';
+    b.style.background = 'radial-gradient(circle at 32% 26%, ' + hexToRgba(cat.color, 0.34) +
+                         ', ' + hexToRgba(cat.color, 0.19) + ' 66%)';
+    b.style.borderColor = hexToRgba(cat.color, 0.45);
     b.style.setProperty('--dur', (7.5 + i * 0.9).toFixed(1) + 's');
     b.style.setProperty('--delay', (i * 0.55).toFixed(2) + 's');
     b.innerHTML = '<span class="b-name">' + cat.name + '</span>' +
@@ -185,7 +186,7 @@
     var cat = CATEGORIES[active];
 
     cat.spent += amount;
-    cat.size = Math.min(cat.size + amount / 55, 34);
+    cat.size = Math.min(cat.size + amount / 45, 42);
 
     cat.el.style.width = cat.size.toFixed(2) + '%';
     cat.el.querySelector('.b-amt').textContent = money(cat.spent);
