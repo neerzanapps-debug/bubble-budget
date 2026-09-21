@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://neerzanapps-debug.github.io/bubble-budget/assets/images/og-cover.png">
 
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
@@ -36,6 +36,7 @@
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#friction">Why bubbles</a>
+      <a href="#shots">Screenshots</a>
       <a href="#features">Features</a>
       <a href="#privacy">Privacy</a>
       <a href="#sync">Export &amp; sync</a>
@@ -244,15 +245,47 @@
           </div>
         </div>
         <h3>Rings are your limits</h3>
-        <p>A bubble quietly draws an amber ring at 80% of its cap and a red one at 100%. No
-          push notifications, no red banners, no shame — just a ring that's there when you look.</p>
+        <p>Set a limit on a category and its bubble starts drawing a ring as you approach it.
+          Leave the limit off and it simply grows. No push notifications, no red banners, no
+          shame — just a ring that's there when you look.</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- ====================================================== SCREENSHOTS -->
+<section id="shots" class="band">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The real thing</span>
+      <h2>Straight from the app.</h2>
+      <p class="lead">
+        Screenshots, not mockups. These show the dark theme — Settings has a light one too.
+      </p>
+    </div>
+
+    <div class="shots reveal">
+      <figure>
+        <img src="assets/mockups/bubbles.jpg" width="720" height="1280" loading="lazy"
+             alt="The Bubble Budget canvas: seven spending categories as coloured bubbles sized by amount, with the month and total at the top.">
+        <figcaption>The canvas. Size is the amount, colour is the category.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/mockups/sheets-sync.jpg" width="720" height="1280" loading="lazy"
+             alt="The Google Sheets Sync setup screen, offering to email yourself a setup kit or copy the script code.">
+        <figcaption>Sheet sync, set up once. The app emails you the kit.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/mockups/settings.jpg" width="720" height="1280" loading="lazy"
+             alt="The Settings screen showing Export All Data as CSV, currency, app theme, sound effects and haptic feedback.">
+        <figcaption>Settings. CSV export, theme, currency, haptics.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- ======================================================== FEATURES -->
-<section id="features" class="band">
+<section id="features">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">What's inside</span>
@@ -303,8 +336,8 @@
           <svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.5"/><path d="M3.5 9h17M9 9v11M15 9v11"/></svg>
         </div>
         <h3>Your spreadsheet, your call</h3>
-        <p>Sync to a Google Sheet you own via a script you install, or just export the ledger
-          as a spreadsheet whenever you feel like it. Both routes skip us entirely.</p>
+        <p>Sync to a Google Sheet you own via a script you install, or export every transaction
+          as a CSV straight from Settings. Both routes skip us entirely.</p>
       </article>
 
       <article class="glass feature">
@@ -336,7 +369,7 @@
           <li><i class="tick">✓</i><span><b>Local SQLite storage.</b> One database file, on your device, under your control.</span></li>
           <li><i class="tick">✓</i><span><b>Zero telemetry.</b> No analytics SDK, no crash-tracking pixel, no ad identifiers.</span></li>
           <li><i class="tick">✓</i><span><b>No bank connection.</b> We never ask for credentials, because we never need them.</span></li>
-          <li><i class="tick">✓</i><span><b>Yours to export.</b> Take the whole ledger out as a spreadsheet any time, sync or no sync.</span></li>
+          <li><i class="tick">✓</i><span><b>Yours to export.</b> Every transaction out as a CSV any time, sync or no sync.</span></li>
         </ul>
       </div>
 
@@ -380,9 +413,9 @@
           <span class="way-tag">Or skip it entirely</span>
           <h3>Just export the file</h3>
           <p>
-            Don't want sync, or don't want a Google account in the loop? Export the whole
-            ledger as a spreadsheet in a couple of taps and open it in Excel, Numbers or
-            Sheets. No setup, no script, no account.
+            Don't want sync, or don't want a Google account in the loop? <b>Settings → Export
+            All Data (CSV)</b> saves or shares every transaction as a CSV you can open in
+            Excel, Numbers, Sheets or anything else. No setup, no script, no account.
           </p>
         </article>
       </div>
@@ -473,14 +506,20 @@
       </details>
       <details class="q">
         <summary>Can I set limits per category?</summary>
-        <p>Yes. Each bubble can carry its own cap. At 80% it draws an amber ring, at 100% a red
-          one — visible at a glance on the canvas, without a single notification.</p>
+        <p>Yes, and it's optional per category. Set a limit and that bubble draws a ring as you
+          approach it, visible at a glance on the canvas without a single notification. Skip the
+          limit and the bubble just grows.</p>
       </details>
       <details class="q">
         <summary>Can I get my data out without setting up sync?</summary>
-        <p>Yes. Export the whole ledger as a spreadsheet in a couple of taps and open it
-          wherever you like — Excel, Numbers, Sheets. The Apps Script sync is for people who
+        <p>Yes. Settings → Export All Data (CSV) saves or shares every transaction as a CSV,
+          which opens anywhere — Excel, Numbers, Sheets. The Apps Script sync is for people who
           want it landing in a sheet continuously; export is for everyone else.</p>
+      </details>
+      <details class="q">
+        <summary>Does it have a light theme?</summary>
+        <p>Both. Settings has an App Theme control — dark or light, your choice. The screenshots
+          on this page show the dark theme.</p>
       </details>
       <details class="q">
         <summary>Which platforms is it on?</summary>
@@ -541,6 +580,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>

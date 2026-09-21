@@ -99,9 +99,9 @@ on screen.
 **Colour is identity** — Pick a colour per category once and your muscle memory does the
 rest. After a week you stop reading labels and start reaching straight for the teal one.
 
-**Rings are your limits** — A bubble quietly draws an amber ring at 80% of its cap and a red
-one at 100%. No push notifications, no red banners, no shame — just a ring that's there when
-you look.
+**Rings are your limits** — Set a limit on a category and its bubble starts drawing a ring as
+you approach it. Leave the limit off and it simply grows. No push notifications, no red
+banners, no shame — just a ring that's there when you look.
 
 ---
 
@@ -117,7 +117,7 @@ this is worth the effort.
 | Two taps, then the keypad | Tapping a bubble opens the numeric sheet instantly. No transaction type, no category picker, no date field you have to confirm. |
 | Quick-add chips | +5 · +10 · +25 sitting right above the keypad. The parking meter, the flat white, the round of coffees — logged before the card terminal beeps. |
 | Offline-first, local SQLite | Your ledger lives in a SQLite file on your own device. No server round-trip, no loading spinner, no "you're offline" screen. Ever. |
-| Your spreadsheet, your call | Sync to a Google Sheet you own via a script you install, or just export the ledger as a spreadsheet whenever you feel like it. Both routes skip us entirely. |
+| Your spreadsheet, your call | Sync to a Google Sheet you own via a script you install, or export every transaction as a CSV straight from Settings. Both routes skip us entirely. |
 | In-app KPI reports | Burn rate, biggest movers, month-over-month deltas and category shares — computed on-device, in a report you can read in ten seconds. |
 
 ---
@@ -133,7 +133,7 @@ nothing to lock behind a subscription.
 - **Local SQLite storage.** One database file, on your device, under your control.
 - **Zero telemetry.** No analytics SDK, no crash-tracking pixel, no ad identifiers.
 - **No bank connection.** We never ask for credentials, because we never need them.
-- **Yours to export.** Take the whole ledger out as a spreadsheet any time, sync or no sync.
+- **Yours to export.** Every transaction out as a CSV any time, sync or no sync.
 
 **Where your data actually goes**
 1. You tap a bubble — the entry is written to a SQLite file on your phone
@@ -156,9 +156,9 @@ Paste in a short Apps Script and entries post straight from your phone to a shee
 you log them. Automated dashboards build themselves from the rows.
 
 **Or skip it entirely — Just export the file**
-Don't want sync, or don't want a Google account in the loop? Export the whole ledger as a
-spreadsheet in a couple of taps and open it in Excel, Numbers or Sheets. No setup, no script,
-no account.
+Don't want sync, or don't want a Google account in the loop? **Settings → Export All Data
+(CSV)** saves or shares every transaction as a CSV you can open in Excel, Numbers, Sheets or
+anything else. No setup, no script, no account.
 
 > Both routes matter. Sync is for people who want the sheet always current; export is for
 > everyone who just wants their numbers out on a Sunday afternoon. Neither routes through us.
@@ -182,9 +182,9 @@ copy that outlives the app, turn on Google Sheet sync and the ledger lives in yo
 spreadsheet too.
 
 **Can I get my data out without setting up sync?**
-Yes. Export the whole ledger as a spreadsheet in a couple of taps and open it wherever you
-like — Excel, Numbers, Sheets. The Apps Script sync is for people who want it landing in a
-sheet continuously; export is for everyone else.
+Yes. Settings → Export All Data (CSV) saves or shares every transaction as a CSV, which opens
+anywhere — Excel, Numbers, Sheets. The Apps Script sync is for people who want it landing in
+a sheet continuously; export is for everyone else.
 
 **How does the Google Sheet sync work?**
 You create a sheet, deploy a short Google Apps Script that Bubble Budget gives you, and paste
@@ -192,8 +192,13 @@ the resulting URL into the app. Entries post directly from your phone to your sh
 routes through us, because there is no us to route through.
 
 **Can I set limits per category?**
-Yes. Each bubble can carry its own cap. At 80% it draws an amber ring, at 100% a red one —
-visible at a glance on the canvas, without a single notification.
+Yes, and it's optional per category. Set a limit and that bubble draws a ring as you approach
+it, visible at a glance without a single notification. Skip the limit and the bubble just
+grows.
+
+**Does it have a light theme?**
+Both. Settings has an App Theme control — dark or light. The screenshots on the site show the
+dark theme.
 
 **Which platforms is it on?**
 On iPhone today, free on the App Store. It is built in Flutter, so an Android build is
@@ -250,6 +255,28 @@ type it, done. Offline, no account, no subscription.
 - Avoid guilt framing ("stop wasting money"). The app deliberately doesn't nag; the copy
   shouldn't either.
 - Keep the em-dash-heavy rhythm out of store listings; Apple review copy reads better plain.
+
+---
+
+## 11a. Verified app facts (Sep 2026, from real screenshots)
+
+Anything on the page describing the app must match these:
+
+- **Theme:** ships dark and light; Settings → App Theme. Screenshots on the site are dark.
+- **Tabs:** Reports · Bubbles · History · Settings.
+- **Export:** Settings → **Export All Data (CSV)** — "Save or share a CSV of all transactions".
+  It is CSV, not xlsx. Don't say "spreadsheet file" without naming the format.
+- **Rings:** only appear when a budget limit is set on that category. Not unconditional.
+- **Sheet sync:** guided setup — email yourself a setup kit, or copy the script and follow the
+  walkthrough, then name the connection and paste the link from Google.
+- **Other Settings:** currency, sound effects, haptic feedback, show total budget header.
+
+### Screenshot rule
+
+Only real device screenshots go on the site. Two of the Play Store images (the café banner and
+the laptop shot) are AI-generated composites with garbled UI text — "Rkuno" in the tab bar,
+"Daly Aoy", "Yeary", "BUDGET & EAPERAES DVEN'DOW". Those must not appear on the site, and are
+worth replacing on Play.
 
 ---
 
